@@ -35,3 +35,38 @@ function reverseStr() {
     }}
     document.getElementById('outputArr2').innerHTML += `Số ` +number +` xuất hiện nhiều nhất là `+ times +` lần`
  } 
+
+ ListNumber = [
+   {
+     name : 'Alice',
+     number : 94758052,
+   },
+   {
+    name : 'Bob',
+    number : 94758052,
+  },
+  {
+    name : 'Cris',
+    number : 94758052,
+  },
+  {
+    name : 'Dan',
+    number : 94758052,
+  },
+ ]
+
+ function renderListNumber() {
+   for (let listName of ListNumber) {
+     document.getElementById("listNumber").innerHTML += `
+         <div class="nameItem"> 
+           <span class="name"> `+ listName.name +`
+           </span>
+           <span class="number"> `+ listName.number +`
+           <button> Del </button>
+           </span>
+           
+         </div>
+     `
+   }
+ }
+ renderListNumber()
