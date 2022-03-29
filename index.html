@@ -74,14 +74,14 @@
         <p>4. Viết một ứng dụng web danh bạ</p>
         <div>
              <div>
-                <input type="text" placeholder="Name"/>
-                <input type="text" placeholder="Phone Numbers"/>
-                <button>ADD</button>
+                <input id="addName" type="text" placeholder="Name"/>
+                <input id="addNumber" type="text" placeholder="Phone Numbers"/>
+                <button id="add" onclick="addToList()">ADD</button>
              </div>
              <div>
-                 <input type="text" placeholder="Search"/>
-                 <button><i class="material-icons">search</i></button>
-                 <button>Del Duplicate Num</button>
+                 <input id="findName"type="text" placeholder="Search"/>
+                 <button onclick="search()"><i class="material-icons">search</i></button>
+                 <button onclick="delDupNum()">Del Duplicate Num</button>
              </div>
              <div id="listNumber">
 
